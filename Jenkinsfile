@@ -24,15 +24,12 @@ pipeline {
     }
 
     stage('Deploy to EKS') {
-    steps {
+      steps {
         sh '''
-            export PATH=$PATH:/usr/local/bin
-            kubectl apply -f deployment.yml
-            kubectl apply -f service.yml
+          export PATH=$PATH:/usr/local/bin
+          kubectl apply -f deployment.yml
+          kubectl apply -f service.yml
         '''
+      }
     }
-}
-
-
-
-
+  }  
