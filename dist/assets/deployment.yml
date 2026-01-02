@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: trend
-        image: <dockerhub-username>/trend-app:latest
+        image: evangelinegiftyy/trend-app:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 80
